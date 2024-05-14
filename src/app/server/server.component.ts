@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 
 // a component is a typescript class
-export class ServerComponent {}
+export class ServerComponent {
+  serverId = 10;
+  serverStatus = 'offline';
+
+  //define a method - methods can be used in string interpolation
+  getServerStatus() {
+    return this.serverStatus;
+  }
+}
