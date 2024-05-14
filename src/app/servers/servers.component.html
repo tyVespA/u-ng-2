@@ -1,12 +1,20 @@
 <label for="">Server Name</label>
-<input
+<!-- <input
   type="text"
   name=""
   id=""
   class="form-control"
   (input)="onUpdateServerName($event)"
+/> -->
+
+<!-- both square brackets and parentheses are use for 2 way data binding -->
+<input
+  type="text"
+  name=""
+  id=""
+  class="form-control"
+  [(ngModel)]="serverName"
 />
-<p>Server Name: {{ serverName }}</p>
 
 <!-- square brackets indicate the use of property binding -->
 <!-- parentheses indicate the use of event binding -->
